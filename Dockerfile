@@ -2,10 +2,10 @@ FROM debian:testing-slim
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ENV WORK_DIR /usr/src/app
-ENV RVM_INSTALLER https://raw.githubusercontent.com/rvm/rvm/stable/binscripts/rvm-installer
+ENV RVM_INSTALLER https://get.rvm.io
 
 MAINTAINER Liu Lantao <liulantao@gmail.com>
-ENV REFRESHED_AT 2017-06-24
+ENV REFRESHED_AT 2017-12-14
 
 RUN apt-get update \
 	&& apt-get install -q -y --no-install-recommends curl gpg ca-certificates procps nodejs build-essential \
